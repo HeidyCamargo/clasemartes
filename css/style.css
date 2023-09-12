@@ -1,0 +1,53 @@
+/* Importar tipografia */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* selector de etiqueta */
+a{
+    margin-left: 30px;
+    color: orange;
+}
+/* selector por id */
+#option_one,#option_two,#option_three {
+    color: blue;
+}
+ /* selector por clases */
+.group_option{
+    background-color: aqua;
+    margin: 5px;
+ }
+ .group_class{
+    padding: 10px;
+ }
+ /* selector por pseudoclase */
+ .group_option:hover{
+    background-color: blueviolet;
+    color: black;
+ }
+ /* selector por atributo */
+ [disabled]{
+    background-color: red;
+ }
+ /* selectores ascendentes */
+ #papa{
+    border: 2px solid #0026ff;
+    border-radius: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    box-shadow: 0px 20px 10px;
+ }
+ #papa > .hermanos + .hermanos{
+    color: aqua;
+ }
+  /* selector descendentes */
+  #papa a {
+    color: blue;
+  }
+  /* selector hijo */
+  #papa > #etiqueta > a{
+    color: burlywood;
+  }
