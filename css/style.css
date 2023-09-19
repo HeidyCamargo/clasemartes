@@ -51,3 +51,55 @@ a{
   #papa > #etiqueta > a{
     color: burlywood;
   }
+/* TITULO PARA BOX MODEL */
+
+#title_box{
+   color:red;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color:aqua ;
+   text-align: center;
+   margin: 20px 0;
+   border: 1px dotted #000;
+   border-radius: 10 px;
+   padding-bottom: 30px;
+   box-shadow: 0px 0px 10px 1px #008000;
+   -webkit-box-shadow: 0px 0px 14px 6px #c72ec7;
+   -moz-box-shadow: 0px 0px 14px 6px #c72ec7;
+   font-size: 40px;
+   letter-spacing: 10px;
+   word-spacing: 20px;
+   text-transform:lowercase;
+
+}
+#box_father{
+   width: 200px;
+   height: 200px;
+   background-color: #000;
+   background-image: url(https://img.freepik.com/vector-gratis/chico-lindo-jugando-futbol-dibujos-animados-vector-icono-ilustracion-concepto-icono-deporte-personas-aislado-vector-premium-estilo-dibujos-animados-plana_138676-4055.jpg?w=826&t=st=1695148190~exp=1695148790~hmac=cb084ad1d72529c419857c06512b1414e5cb97b7a4cb042863340d3b94198183);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat ;
+}
+/* #box_model{ */
+   /* width: 50%; */
+   /* height: 50%; */
+   /* background-color: orange; */
+
+/* } */
+
+/* media querys */
+@media (min-width: 800px)and (max-width:1200px){
+   body{
+      background-color: red;
+   }
+   h1{
+      text-align: center;
+   }
+}
+@media (max-width: 799px){
+   body{
+      background-image: url(https://img.freepik.com/vector-gratis/chico-lindo-jugando-futbol-dibujos-animados-vector-icono-ilustracion-concepto-icono-deporte-personas-aislado-vector-premium-estilo-dibujos-animados-plana_138676-4055.jpg?w=826&t=st=1695148190~exp=1695148790~hmac=cb084ad1d72529c419857c06512b1414e5cb97b7a4cb042863340d3b94198183);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+}
