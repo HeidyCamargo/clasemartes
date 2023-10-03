@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:display=swap');
+
+:root {
+    --primary: #dd946f;
+    --primary-hover: #cd7d7c;
+    --secondary: #efd0f8;
+    --secondary-hover: #b8a1d9;
+    --aura: #9265ca80;
+    --background: #261e4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    color: var(--secondary);
+}
+
+.background {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-pantalla-abstracto-nebulosa-ultra-detallado-4_1562-749.jpg?w=900&t=st=1695777567~exp=1695778167~hmac=70983597cea37c1edb012d55c7f924e652aee9f7390a2a4bb6f43d61a4273df9);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.my_form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 16px;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    border-radius: 8px; 
+    box-shadow: 0 20px 60px var(--aura);
+    min-width: 280px;
+    max-width: 460px;
+    width: 100%;
+    padding: 32px;
+}
+
+.login {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login_welcome {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.my_form_button {
+    background-color: var(--primary);
+    color: var(--background);
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    line-height: 50px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    font-weight: 800;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.text_field input {
+    color: var(--secondary);
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid var(--secondary);
+    height: 50px;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+    outline: 0.25s;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 8px;
+}
+
+.my_form_button:hover {
+    background-color: var(--primary-hover);
+}
+
+.text_field {
+    position: relative;
+}
+
+.text_field img {
+    position: absolute;
+    right: -2px;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+}
+
+.text_field input:focus {
+    border: 1px solid var(--primary);
+}
+
+.text_field label {
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    z-index: 10;
+}
+
+.my_form_actions {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary);
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.my_form_actions a {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.my_form_actions a:hover {
+    color: #a7a2cb;
+}
+
+.my_form_signup {
+    display: flex;
+    justify-content: center;
+}
